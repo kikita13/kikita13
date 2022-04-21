@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ProcessBar {
+    display: block;
+    width: 614px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    /* border: 3px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    position: relative;
+}
+
+.ProcessBar .Circle {
+    display: block;
+    background: url(../Images/check.svg) no-repeat;
+    margin: 0 auto;
+    background-position: 50%;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.Payment .Circle {
+    background: rgba(255, 255, 255, 0);
+    width: 32px;
+    height: 32px;
+}
+
+.Confirm {
+    opacity: 50%;
+}
+
+.hr1 {
+    width: 139px;
+    height: 2px;
+    background: #000;
+}
+
+.hr2 {
+    width: 145px;
+    height: 2px;
+    background: #000;
+}
+
+.hr3 {
+    opacity: 50%;
+    width: 151px;
+    height: 2px;
+    background: #000;
+}
+
+.CartText {
+    padding-top: 35px;
+    position: absolute;
+    text-align: center;
+
+}
+
+.Confirm,
+.Adresses,
+.Payment,
+.Cart {
+    display: flex;
+    justify-content: center;
+}
+
+.Payment .CartText {
+    text-decoration-line: underline;
+    font-size: 16px;
+}
+
+.arrow {
+    width: 24px;
+    height: 18px;
+    background: url(../Images/Arrow.svg) no-repeat;
+    background-position: 50%;
+}
+
+.btnBack {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: 130px;
+    height: 32px;
+    left: calc(50% - 130px/2 - 485px);
+    top: 127px;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.Includes {
+    display: flex;
+    padding: 0px;
+    margin: 110px auto 0 auto;
+    width: 1132px;
+    height: 449px;
+    /* border: 2px solid black; */
+}
+
+@media (max-width:1200px){
+    .Includes {display: inline-block; }
+    .Goods {margin: 2% auto 0 auto;}
+    .btnBack{left: 0px;}
+
+}
+
+.Card {
+    width: 700px;
+    height: 358px;
+    border: 0px solid #CFCFCF;
+    border-radius: 16px;
+}
+
+.iconcard {
+    width: 20px;
+    height: 14px;
+    background: url(../Images/card.svg) no-repeat;
+    margin-right: 19px;
+}
+
+.HeaderCards {
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    width: auto;
+    height: 73px;
+    padding-left: 35px;
+    display: flex;
+    padding-left: 20px;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.AppliedCard,
+.NotAppliedCard {
+    justify-content: space-between;
+    width: 636px;
+    height: 93px;
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+
+.hr4 {
+    margin: 0 auto 0 auto;
+    width: 636px;
+    height: 1px;
+    background: #CFCFCF;
+}
+
+.Icons {
+    width: 24px;
+    height: 93px;
+}
+
+.Icons .Icons1 {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 50%;
+    background: url(../Images/GreenCheck.svg) no-repeat;
+    background-position: 50%;
+}
+
+
+.Icons .Icons2 {
+    width: auto;
+    height: 50%;
+    background: url(../Images/card.svg) no-repeat;
+    background-position: 50%;
+}
+
+.Bank,
+.PinCode,
+.Name,
+.Date {
+    width: auto;
+    height: 92px;
+}
+
+
+.Bank .Bank1,
+.PinCode .PinCode1,
+.Name .Name1,
+.Date .Date1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 17px;
+    width: auto;
+    height: 50%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+}
+
+.Bank .Bank2,
+.PinCode .PinCode2,
+.Name .Name2,
+.Date .Date2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 17px;
+    text-align: center;
+    width: auto;
+    height: 50%;
+    white-space: pre;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.NotAppliedCard .Icons .Icons3 {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 50%;
+    background: url(../Images/WhiteCheck.svg) no-repeat;
+    background-position: 50%;
+}
+
+.Icons .Icons4 {
+    opacity: 50%;
+    width: auto;
+    height: 50%;
+    background: url(../Images/card.svg) no-repeat;
+    background-position: 50%;
+}
+
+.Bank,
+.PinCode,
+.Name,
+.Date {
+    width: auto;
+    height: 92px;
+}
+
+
+.Bank .Bank3,
+.PinCode .PinCode3,
+.Name .Name3,
+.Date .Date3 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 17px;
+    width: auto;
+    height: 50%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E;
+}
+
+.Bank .Bank4,
+.PinCode .PinCode4,
+.Name .Name4,
+.Date .Date4 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    line-height: 17px;
+    text-align: center;
+    width: auto;
+    height: 50%;
+    white-space: pre;
+    font-size: 16px;
+    color: #5E5E5E;
+    font-weight: 300;
+}
+
+.ExistCards {
+
+    border: 1px solid #cfcfcf;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.AddNewCard {
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    width: auto;
+    height: 73px;
+    padding-left: 35px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 16px;
+    border: 1px solid #cfcfcf;
+    margin-top: 24px;
+}
+
+.WhiteCheck {
+    width: 24px;
+    height: 24px;
+    background: url(../Images/WhiteCheck.svg) no-repeat;
+    background-position: 50%;
+    padding-left: 24px;
+}
+
+.Goods {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    height: 313px;
+    border: 1px solid #cfcfcf;
+    border-radius: 16px;
+}
+
+.Header {
+    width: 400px;
+    height: 92px;
+
+}
+
+.Goods .Title {
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.Goods .Paper {
+    width: 16px;
+    padding-right: 21px;
+    height: 20px;
+    background: url(../Images/Paper.svg) no-repeat;
+}
+
+.SubTitle {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 368px;
+    height: 19px;
+    padding-top: 16px;
+}
+
+.SubTitle .Left {
+    width: 220px;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.SubTitle .Right {
+    width: 138px;
+    height: 19px;
+    display: flex;
+}
+
+.Goods .SubTitle .Right .Portion {
+    display: flex;
+    flex: auto;
+}
+
+.hr5 {
+    width: 368px;
+    height: 1px;
+    margin: 0 auto 0 auto;
+    background: #cfcfcf;
+    margin-top: 16px;
+}
+
+.Products {
+
+    width: 400px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 16;
+}
+
+.Salad,
+.Waffle {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    flex-direction: row;
+    width: 400px;
+    height: 40px;
+    margin: 20px 0;
+}
+
+
+.Photo1 {
+    width: 40px;
+    height: 40px;
+    background: url(../Images/Salad.svg) no-repeat;
+}
+
+.Photo2 {
+    width: 40px;
+    height: 40px;
+    background: url(../Images/Waffle.svg) no-repeat;
+}
+
+.Name11,
+.Name22 {
+
+    width: 170px;
+    height: 19px;
+    margin: 0px 16px;
+}
+
+.Count1,
+.Count2 {
+    font-weight: bold;
+    width: 26px;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+
+}
+
+.Price1,
+.Price2 {
+font-weight: bold;
+    width: 60px;
+    height: 19px;
+
+}
+
+.hr6 {
+    width: 400px;
+    height: 1px;
+    background: #cfcfcf;
+
+}
+
+.Total {
+    width: 400px;
+    height: 61px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 174px;
+    height: 28px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 226px;
+}
+
+.Total .Text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.Total .Price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btnGreen {
+    cursor: pointer;
+    border: 0px;
+    margin-top: 24px;
+    margin-left: 32px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    width: 400px;
+    height: 56px;
+    background: #1BB66E;
+    border-radius: 8px;
+
+}
+.btnGreen:hover{
+    background-color: rgb(58, 216, 58);
+}
+.btnGreen:active {
+    box-shadow: inset 5px 10px 50px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
