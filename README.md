@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kikita13/kikita13/main/assets/logo-dark.svg">
+  <img src="https://raw.githubusercontent.com/kikita13/kikita13/main/assets/logo-light.svg" width="56" alt="Kikita logo">
+</picture>
+
 # Nikita Riabov
 
 Frontend engineer specializing in Angular. Building a UI kit and design system for products at work; use NestJS on the backend for personal projects.
